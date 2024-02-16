@@ -18,5 +18,5 @@ To get started with the Coffee Calculator website, follow these simple steps:
 4. **Add Today's Purchase**: Submit the cost for today's coffee to update the buyer list accordingly.
 
 
-Thank you for your time reviewing my code and your consideration!
--William Writer
+Thank you for your time reviewing my code and your consideration! 
+- William Writer
