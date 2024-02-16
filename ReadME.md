@@ -17,6 +17,15 @@ To get started with the Coffee Calculator website, follow these simple steps:
 3. **Today's Buyer**: The buyer's name is dynamically updated based on the coffee purchases.
 4. **Add Today's Purchase**: Submit the cost for today's coffee to update the buyer list accordingly.
 
+## How To Use
+
+**1.** Open the html file in a browser like chrome or safari, the website should be fully functional and usable from there. 
+
+## Assumptions
+
+**1.** I assumed that every coworker would be present everyday so I did not implement a remove coworker option.  
+<br>
+
 
 Thank you for your time reviewing my code and your consideration! 
 - William Writer
