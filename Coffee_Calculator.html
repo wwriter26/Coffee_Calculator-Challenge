@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coffee Calculator </title>
+  <link rel="stylesheet" href="./styles/CC.css">
+</head>
+<body>
+    <img id="cc_img"src="./assets/CoffeeCalc.webp"/>
+    <div id="cc_title_container">
+      <h1 id="cc_title1">Coffee</h1> 
+      <h1 id="cc_title2">Calculator</h1>
+    </div>
+
+  <div class="cc_carousel">
+    <ul class="cc_carousel__list">
+      <li class="cc_carousel__item" data-pos="-1">
+        <div class="cc_newFriend_card cc_onCard">
+          <h3 id="coworker_word1">
+            Add A New Friend
+          </h3>
+          <input type="text" id="cc_coworker_input" placeholder="Enter Name"/>
+          <button id="cc_coworker_button">Add</button>
+
+        </div>
+      </li>
+      <li class="cc_carousel__item" data-pos="0">
+        <div class="cc_currentBuyer_card cc_onCard">
+          <h2 id="currentBuyer_word1">
+            Today's Buyer
+          </h2>
+          <hr>
+          <div id="cc_curr_buyer">Changes to current Buyer</div>
+          
+        </div>
+      </li>
+      <li class="cc_carousel__item" data-pos="1">
+        <div class="cc_todaysPrice_card cc_onCard">
+          <div id="cc_todays_purchase">
+            Add Today's Purchase
+          </div>
+          <input type="text" id="cc_price_input" class="cc_onCard" placeholder="$00.00"/>
+          <button id="cc_submit_button" class="cc_onCard">Submit</button>
+        </div>
+      </li>
+    </ul>
+  </div>
+  
+  
+  
+
+  <script src="./scripts/CC.js"></script>
+  <script src="./scripts/Coworker.js"></script>
+  <script src="./scripts/CurrentBuyer.js"></script>
+</body>
+</html>

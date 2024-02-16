@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+body{
+  background: radial-gradient(circle at 50% 50%, rgba(206, 188, 160, 1) 50%, rgba(198, 165, 68, 1) 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+hr {
+  width: 100%;
+  height: 2px; /* Adjust the height as needed */
+  border: none; /* Remove the default border */
+  background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(148, 113, 11, 1) 100%);
+}
+button {
+  background: linear-gradient(90deg, rgba(148, 113, 11, 1) 0%, rgba(0, 0, 0, 1) 50%, rgba(148, 113, 11, 1) 100%);
+  border: none; 
+  color: #fff8e7; 
+  padding-left: 10px; 
+  padding-right: 10px; 
+  padding-bottom: 9px;
+  padding-top: 7px;
+  margin-left: 3px;
+  font-family: 'Lobster', cursive;  font-size: 15px; 
+  border-radius: 5px; 
+  cursor: pointer; 
+  box-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+  transition: background-image 0.3s ease; 
+  
+}
+
+button:hover {
+  background-image: linear-gradient(to top, #d3a04c, #aa7939); /* Inverted gradient on hover */
+  box-shadow: 0 0 8px rgba(169, 129, 57, 0.5); /* More pronounced shadow on hover */
+}
+input{
+  background-color: #fff8e7; 
+  border: 2px solid #d3a04c; 
+  color: #935f0b; 
+  font-family: 'Times New Roman', Times, serif; 
+  padding: 8px; 
+  border-radius: 5px; 
+  box-shadow: 1px 1px 3px rgba(0,0,0,0.2); 
+  box-sizing: border-box; 
+}
+
+/* #cc_header_container{
+  border: 2px solid black;
+} */
+#cc_img{
+  width: 175px;
+  height: 175px;
+  border-radius: 100px;
+}
+#cc_img.hover{
+  cursor: pointer;
+}
+
+#cc_title_container{
+  display: flex;
+  flex-direction: column;  
+}
+
+#cc_title1 {
+  /* allows for words to have gradient coloring */
+  background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(148, 113, 11, 1) 72%);
+  margin: 0;
+  font-size: 60px;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent; /* Makes the text color transparent to show the gradient */
+  font-family: 'Lobster', cursive;
+  text-align: left;
+}
+#cc_title2 {
+  margin: 0;
+  font-size: 60px;
+  /* allows for words to have gradient coloring */
+  background: linear-gradient(90deg, rgba(0, 0, 0, 1) 49%, rgba(148, 113, 11, 1) 98%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent; /* Makes the text color transparent to show the gradient */
+  font-family: 'Lobster', cursive;
+  text-align: left;
+}
+
+#currentBuyer_word1{
+  font-size: 45px;
+  margin: 0;
+  /* allows for words to have gradient coloring */
+  background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(148, 113, 11, 1) 70%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent; /* Makes the text color transparent to show the gradient */
+  font-family: 'Lobster', cursive;
+  text-align: center;
+}
+#cc_curr_buyer{
+  font-size: 60px;
+  margin: 0;
+  color:rgba(0, 0, 0, 1);
+  font-family: 'Lobster', cursive;
+  text-align: center;
+}
+#coworker_word1{
+  font-size: 25px;
+  margin-bottom: 20px;
+  /* allows for words to have gradient coloring */
+  background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(148, 113, 11, 1) 75%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent; 
+  font-family: 'Lobster', cursive;
+  text-align: center;
+}
+#cc_todays_purchase{
+  font-size: 25px;
+  margin-bottom: 20px;
+  /* allows for words to have gradient coloring */
+  background: linear-gradient(90deg, rgba(0, 0, 0, 1) 49%, rgba(148, 113, 11, 1) 98%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent; 
+  font-family: 'Lobster', cursive;
+  text-align: center;
+}
+
+/* Carousel component */
+.cc_carousel {
+  position: absolute;
+  top: 10vh;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  font-family: Arial;
+}
+
+.cc_carousel__list {
+  display: flex;
+  list-style: none;
+  position: relative;
+  width: 100%;
+  height: 300px;
+  justify-content: center;
+  perspective: 300px;
+}
+
+.cc_carousel__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  font-size: 20px; 
+  width: 450px;
+  height: 350px;
+  border-radius: 12px;
+  box-shadow: 0px 2px 8px 0px rgba(50, 50, 50, 0.5);
+  position: absolute;
+  transition: all .3s ease-in;
+}
+/* .test{
+  border: 2px solid black;
+} */
+/* .cc_onCard{
+  border: 2px solid black;
+} */
+
+.cc_carousel__item:nth-child(1) {
+  background: rgba(255, 248, 220);
+}
+
+.cc_carousel__item:nth-child(2) {
+  background: rgba(255, 248, 220);
+}
+
+.cc_carousel__item:nth-child(3) {
+  background: rgba(255, 248, 220);
+}
+
+.cc_carousel__item[data-pos="0"] {
+  z-index: 3;
+}
+
+.cc_carousel__item[data-pos="-1"],
+.cc_carousel__item[data-pos="1"] {
+  opacity: 0.7;
+  filter: blur(1px) grayscale(10%);
+  z-index: 2;
+}
+
+.cc_carousel__item[data-pos="-1"] {
+  transform: translateX(-40%) rotateY(10deg) scale(.9);
+}
+
+.cc_carousel__item[data-pos="1"] {
+  transform: translateX(40%) rotateY(-10deg) scale(.9);
+}
+
+@media screen and (max-width: 1200px) {
+  /* Adjustments for tablets and smaller desktops */
+  #cc_title1, #cc_title2 {
+    font-size: 70px; 
+  }
+
+  .cc_carousel__item {
+    width: 350px; 
+    height: 300px; 
+  }
+
+  #cc_img {
+    width: 200px; 
+    height: 200px; 
+  }
+
+}
+
+@media screen and (max-width: 750px) {
+  /* Adjustments for mobile devices */
+  #cc_title1, #cc_title2 {
+    font-size: 40px; 
+  }
+
+  .cc_carousel__item {
+    width: 200px; 
+    height: 150px; 
+    /* left:23%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #cc_img {
+    width: 150px; 
+    height: 150px; 
+  }
+
+  #currentBuyer_word1{
+    font-size: 45px;
+    margin: 0;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(148, 113, 11, 1) 70%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent; /* Makes the text color transparent to show the gradient */
+    font-family: 'Lobster', cursive;
+    text-align: center;
+  }
+  #cc_curr_buyer{
+    font-size: 20px;
+  }
+  #coworker_word1{
+    font-size: 15px;
+    
+  }
+  #cc_todays_purchase{
+    font-size: 15px;
+  }
+  button {
+    padding: 2px;
+    font-size: 12px;
+  }
+  
+  #currentBuyer_word1{
+    font-size: 20px;
+  }
+  input{
+    padding: 0px;
+  }
+}
